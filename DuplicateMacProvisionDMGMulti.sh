@@ -1,8 +1,8 @@
 #!/bin/sh
-# DuplicateMacProvisionDiskImg.sh
-# Use sudo sh ./DuplicateMacProvisionDiskImg.sh to run
+# DuplicateMacProvisionDMGMulti.sh
+# Use sudo sh ./DuplicateMacProvisionDMGMulti.sh to run
 # *** Read info below before using!!! ***
-# Mike Thompson, JMT, 4/2019, Rutherford County Schools
+# Mike Thompson, JMT, 5/2019, Rutherford County Schools
 
 # This is a niche quick and dirty script for those wanting to speed up the process of duplicating Mac Provisioning USB Flash drives
 # for Reimaging Apple/Mac computers. If you do not know what Mac Provisioner is (tool provided by Apple) you do not need this.
