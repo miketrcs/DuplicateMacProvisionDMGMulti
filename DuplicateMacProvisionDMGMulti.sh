@@ -29,14 +29,14 @@
 # I use an Amazon Basics 4 port "powered" USB hub and highly recommend. Make sure you get the "power" adapter if you purchase
 # or you could get USB power warnings. 
 
-#Create looped menu for making multiple duplications. 
+# Create looped menu for making multiple duplications. 
 
-#Clear screen
+# Clear screen
 clear
 
 diskutil list
 
-#Loop Menu Variables
+# Loop Menu Variables
 break='Continue Quit'
 PS3='*** Danger!! This script could wipe usable partitions if the disk locations are not changed in this script. Beware if you use a Time Capsule as it can automount to one of the dev locations you have configured!!! *** Type 1 then press Enter to Continue or 2 then Enter to Exit!'
 
@@ -72,11 +72,11 @@ FlashDriveLoc3Part2="$FlashDriveLoc3"s3
 FlashDriveLoc4Part1="$FlashDriveLoc4"s2
 FlashDriveLoc4Part2="$FlashDriveLoc4"s3
 
-#Caffeinate macOS to prevent sleep with this scripts PID (releases when script is exited)
+# Caffeinate macOS to prevent sleep with this scripts PID (releases when script is exited)
 caffeinate -w $$ &
 
 
-#Kick off the if then loop
+# Kick off the if then loop
 select name in $break
 do
 	if [ $name == 'Quit' ]
@@ -88,8 +88,8 @@ echo
 echo
 echo
 
-#Creates 2 partitions on a 32GB+ Flash Drive/other, 16GB for the first one and then use the rest for the second one. 
-#Can change the size below if needed. 
+# Creates 2 partitions on a 32GB+ Flash Drive/other, 16GB for the first one and then use the rest for the second one. 
+# Can change the size below if needed. 
 
 diskutil partitionDisk $FlashDriveLoc1 GPT JHFS+ First $DrivePartSize1 JHFS+ Second 0b
 
@@ -103,11 +103,11 @@ echo
 echo
 echo
 
-#Mount Disk Image previously made with Disk Utility from flash drive read only (Example location)
+# Mount Disk Image previously made with Disk Utility from flash drive read only (Example location)
 MacProvImageDev=$(hdiutil mount -readonly $MacProvImageLoc | awk '/dev.disk/{print$1}')
 MacProvImageMountLoc=$(echo $MacProvImageDev | awk '{ print $1 }')
 
-#USB Disk 1
+# USB Disk 1
 echo "Restoring partition 1 to $FlashDriveLoc1Part1"
 sudo asr restore --erase --noprompt -source "$MacProvImageMountLoc"s2 --target $FlashDriveLoc1Part1
 echo "Restoring partition 2 to $FlashDriveLoc1Part2"
@@ -116,7 +116,7 @@ echo
 echo 
 echo
 
-#USB Disk 2
+# USB Disk 2
 echo "Restoring partition 1 to $FlashDriveLoc2Part1"
 sudo asr restore --erase --noprompt -source "$MacProvImageMountLoc"s2 --target $FlashDriveLoc2Part1
 echo "Restoring partition 2 to $FlashDriveLoc2Part2"
@@ -125,7 +125,7 @@ echo
 echo 
 echo
 
-#USB Disk 3
+# USB Disk 3
 echo "Restoring partition 1 to $FlashDriveLoc3Part1"
 sudo asr restore --erase --noprompt -source "$MacProvImageMountLoc"s2 --target $FlashDriveLoc3Part1
 echo "Restoring partition 2 to $FlashDriveLoc3Part2"
@@ -134,7 +134,7 @@ echo
 echo
 echo
 
-#USB Disk 4
+# USB Disk 4
 echo "Restoring partition 1 to $FlashDriveLoc4Part1"
 sudo asr restore --erase --noprompt -source "$MacProvImageMountLoc"s2 --target $FlashDriveLoc4Part1
 echo "Restoring partition 2 to $FlashDriveLoc4Part2"
@@ -143,7 +143,7 @@ echo
 echo 
 echo
 
-#Finished, giving time to let asr finish up, then unmounting flash drive
+# Finished, giving time to let asr finish up, then unmounting flash drive
 
 sleep 15
 
