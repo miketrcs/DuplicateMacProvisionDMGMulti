@@ -18,8 +18,8 @@ disk utility and create a DMG file (will create both partition inside the file. 
 You could in theory use this for any multiple purpose multi-partition duplication, edit for your own purposes. 
 
 **** Danger, /dev locations must be modified for your Mac/setup, if not you could destroy a partition!!!
-# ************* Danger if you use Apple Time Capsule!!! If it automounts before you run this it could utilize a /dev/disk that 
-# was once allocated by a flash drive. Double check diskutil list! (Don't ask me how I know this...)
+************* Danger if you use Apple Time Capsule!!! If it automounts before you run this it could utilize a /dev/disk that 
+was once allocated by a flash drive. Double check diskutil list! (Don't ask me how I know this...)
 
 I recommend at least using a 32GB flash drive. Change the below variable needed to vary the size of the 1st partition
 Recommended flash drive ($9.xx from Amazon) Samsung USB 3.1 32GB FIT drives. Fast and reliable drives for the price!
