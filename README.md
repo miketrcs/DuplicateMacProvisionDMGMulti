@@ -1,6 +1,6 @@
 <H2>Duplicate Mac Provisioning Flash Disk (Multiple Flash Drive version)</H2>
 
-*** Read info below before using!!! ***
+*** Read info below before using! This script is dangerous without editing drive locations!!! ***
 
 This is a niche quick and dirty script for those wanting to speed up the process of duplicating Mac Provisioning USB Flash drives
 for Reimaging Apple/Mac computers. If you do not know what Mac Provisioner is (tool provided by Apple) you do not need this.
