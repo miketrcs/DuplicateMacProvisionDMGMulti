@@ -3,7 +3,7 @@
 (Copied from header of Bash Script.)
 
 *** Read info below before using!!! ***
-Mike Thompson, JMT, 5/2019, Rutherford County Schools
+
 This is a niche quick and dirty script for those wanting to speed up the process of duplicating Mac Provisioning USB Flash drives
 for Reimaging Apple/Mac computers. If you do not know what Mac Provisioner is (tool provided by Apple) you do not need this.
 Why did I do this? I needed a quicker way to mass duplicate Mac Provisioner USB drives for technicians in RCS. 
