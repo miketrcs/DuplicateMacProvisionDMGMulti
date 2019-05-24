@@ -48,6 +48,8 @@ Danger!!! You need to do a diskutil list at the CLI to make sure the below is co
  Make sure you rename the Provisioning Image with a shortfile name. (otherwise it will need to be escaped out)
 '
 
+# ------ Minimum you need to edit the below Variables ------
+
 # *** Important to verify the below as your USB Flash Drives! ***
 # USB Flash Drive Device Locations
 FlashDriveLoc1='/dev/disk3'
@@ -55,8 +57,10 @@ FlashDriveLoc2='/dev/disk4'
 FlashDriveLoc3='/dev/disk5'
 FlashDriveLoc4='/dev/disk6'
 
-# DMG Variables
-MacProvImageLoc='/Users/thompsonmike/Desktop/MacProvisioning/MacProvErase.dmg'
+# DMG Variable
+MacProvImageLoc='./MacProvErase.dmg'
+
+# ------ END Edit Variables ------
 
 # Partition Variables
 FlashDriveLoc1Part1="$FlashDriveLoc1"s2
