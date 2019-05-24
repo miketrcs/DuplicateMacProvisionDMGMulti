@@ -33,4 +33,5 @@ To run from macOS terminal:
 It is best for this script to sudo into su to prevent additional login prompts
 
 sudo su
+
 sh DuplicateMacProvisionDMGMulti.sh	
