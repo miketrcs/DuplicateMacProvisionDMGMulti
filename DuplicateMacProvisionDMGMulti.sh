@@ -137,7 +137,7 @@ echo
 echo 
 echo
 
-#Finished, give time to let asr finish up, unmount flash drive
+#Finished, giving time to let asr finish up, then unmounting flash drive
 
 sleep 15
 
