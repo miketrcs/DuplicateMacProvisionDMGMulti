@@ -14,13 +14,18 @@
 # Instructions:
 # Make sure your partitions are correct by using "diskutil list" with your disk media below mounted and USB flash drive.
 # Make sure you change the MacProvImageLoc to the dmg name you create. Mac Provisioner can create erase installs and upgrade installs
-# so I name the dmg appropriately. You create the DMG file AFTER you create a USB flash drive with Mac to your liking. In
+# so I name the dmg appropriately. You create the DMG file AFTER you create a USB flash drive with Mac Provisioner to your liking. In
 # disk utility GUI you can dismount the USB drive (both partitions) then right click on the dismounted flash drive inside 
 # disk utility and create a DMG file (will create both partition inside the file. Email me if needed. 
 # You could in theory use this for any multiple purpose multi-partition duplication, edit for your own purposes. 
 
 # ************* Danger, /dev locations must be modified for your Mac/setup, if not you could destroy a partition!!! **************
 
+# I recommend at least using a 32GB flash drive. Change the below variable needed to vary the size of the 1st partition
+# Recommended flash drive ($9.xx from Amazon) Samsung USB 3.1 32GB FIT drives. Fast and reliable drives for the price!
+# I also rewrote the script to be able to do 4 USB flash drives at a time (5/24/2019) if you have seen the single script. 
+# I use an Amazon Basics 4 port "powered" USB hub and highly recommend. Make sure you get the "power" adapter if you purchase
+# or you could get USB power warnings. 
 
 #Create looped menu for making multiple duplications. 
 
@@ -32,9 +37,6 @@ diskutil list
 #Loop Menu Variables
 break='Continue Quit'
 PS3='Type 1 then press Enter to Continue or 2 then Enter to Exit! *** Danger!! This script could wipe usable partitions if the disk locations are not changed in this script!!! ***'
-
-#I recommend at least using a 32GB flash drive. Change the below variable needed to vary the size of the 1st partition
-#Recommended flash drive ($9.xx from Amazon) Samsung USB 3.1 32GB FIT drives. Fast and reliable drives for the price!
 
 DrivePartSize1='16g'
 
