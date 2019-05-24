@@ -1,4 +1,4 @@
-Duplicate Mac Provisioning Flash Disk
+<H4>Duplicate Mac Provisioning Flash Disk</H4>
 *** Danger, this can be a destructive script, read below fully, not responsible for data loss!!! ***
 
 This is a niche quick and dirty script for those wanting to speed up the process of duplicating Mac Provisioning USB Flash drives for Reimaging Apple/Mac computers. If you do not know what Mac Provisioner is (tool provided by Apple) you do not need this. Why did I do this? I needed a quicker way to mass duplicate Mac Provisioner created USB drives for technicians in RCS. The Mac Provisioner creates a multi-partition drive that you can option boot a MacBook/iMac/other and automatically install macOS. (Brief desc.) I did not right off find an easy way to seamlessly duplicate the multi-partition drive. Single partition can be easily duplicated with Disk Utility/other GUI utilities but from what I found not multi-partition (at the time of this writing). This script is looped, unmounts and asks you if you want to do another after duplication is finished.
