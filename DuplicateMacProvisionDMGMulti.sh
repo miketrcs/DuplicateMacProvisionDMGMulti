@@ -154,6 +154,9 @@ diskutil unmountDisk $FlashDriveLoc1
 diskutil unmountDisk $FlashDriveLoc2
 diskutil unmountDisk $FlashDriveLoc3
 diskutil unmountDisk $FlashDriveLoc4
+echo
+echo
+echo
 
 done
 
