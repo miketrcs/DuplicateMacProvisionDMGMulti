@@ -1,7 +1,5 @@
 <H2>Duplicate Mac Provisioning Flash Disk (Multiple Flash Drive version)</H2>
 
-(Copied from header of Bash Script.)
-
 *** Read info below before using!!! ***
 
 This is a niche quick and dirty script for those wanting to speed up the process of duplicating Mac Provisioning USB Flash drives
