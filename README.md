@@ -8,4 +8,6 @@ Instructions: Make sure your partitions are correct by using "diskutil list" wit
 
 To run from macOS terminal:
 
-sudo sh DuplicateMacProvisionDiskImg.sh
+It is best for this script to sudo into su to prevent additional login prompts
+sudo su
+sh DuplicateMacProvisionDMGMulti.sh	
