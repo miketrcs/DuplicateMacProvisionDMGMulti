@@ -1,6 +1,10 @@
 #!/bin/sh
 # DuplicateMacProvisionDMGMulti.sh
-# Use sudo sh ./DuplicateMacProvisionDMGMulti.sh to run
+# Use: (Recommended to sudo su so it doesn't ask you multiple times to authenticate during the script)
+# sudo su
+# sh ./DuplicateMacProvisionDMGMulti.sh
+# to run
+#
 # *** Read info below before using!!! ***
 # Mike Thompson, JMT, 5/2019, Rutherford County Schools
 
