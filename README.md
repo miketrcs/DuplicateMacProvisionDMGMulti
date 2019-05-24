@@ -1,4 +1,4 @@
-<H2>Duplicate Mac Provisioning Flash Disk (Multiple Flash Driver version)</H2>
+<H2>Duplicate Mac Provisioning Flash Disk (Multiple Flash Drive version)</H2>
 
 *** Danger, this can be a destructive script, read below fully, not responsible for data loss!!! ***
 
