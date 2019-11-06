@@ -27,6 +27,7 @@ I also rewrote the script to be able to do 4 USB flash drives at a time (5/24/20
 I use an Amazon Basics 4 port "powered" USB hub and highly recommend. Make sure you get the "power" adapter if you purchase
 or you could get USB power warnings. 
 
+Update: 11/06/2019, If the script has trouble mounting the DMG's created from USB Flash Drives Mac Provisioner created please double click and open each DMG once on the same machine you are running this script from. Do this if you get an error that looks similar to this: "Could not recognize '/examplepathto/MacProvisioning/s2' as an image file". 
 
 To run from macOS terminal:
 
@@ -35,3 +36,4 @@ It is best for this script to sudo into su to prevent additional login prompts
 sudo su
 
 sh DuplicateMacProvisionDMGMulti.sh	
+
